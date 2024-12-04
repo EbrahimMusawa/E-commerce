@@ -22,14 +22,14 @@ function App() {
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
         <Router>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen bg-gray-50">
+            <Toaster position="top-center" />
             <Navbar />
             <main className="flex-grow">
               <AppRoutes />
             </main>
             <Footer />
           </div>
-          <Toaster position="top-right" />
         </Router>
       </QueryClientProvider>
     </Provider>
